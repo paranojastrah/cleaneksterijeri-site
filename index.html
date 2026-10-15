@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Eksterijeri — vanjsko čišćenje i pranje</title>
+<meta name="description" content="Clean Eksterijeri — profesionalno čišćenje eksterijera: fasade, tlakovci, terase, ograde i staze. Stranica je u obnovi.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --bg:#0b1016; --panel:#121a24; --line:#1f2c3a; --ink:#eef4fb; --muted:#9fb0c4;
+    --brand:#39c2a4; --brand-2:#2b9fd8;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;
+    color:var(--ink); background:
+      radial-gradient(1100px 600px at 12% -10%, #17313a 0%, transparent 60%),
+      radial-gradient(900px 520px at 95% 8%, #123043 0%, transparent 55%),
+      var(--bg);
+    display:flex; align-items:center; justify-content:center; padding:28px;
+  }
+  .card{
+    width:100%; max-width:760px; background:linear-gradient(180deg,#141d28,#101821);
+    border:1px solid var(--line); border-radius:18px; padding:38px 34px;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
+  }
+  .badge{
+    display:inline-flex; align-items:center; gap:8px; font-size:12.5px; letter-spacing:.04em;
+    text-transform:uppercase; color:var(--brand); border:1px solid #23544b;
+    background:#0f2621; padding:6px 12px; border-radius:999px;
+  }
+  .dot{width:7px;height:7px;border-radius:50%;background:var(--brand);box-shadow:0 0 10px var(--brand)}
+  h1{margin:18px 0 6px; font-size:clamp(28px,5vw,42px); line-height:1.1; letter-spacing:-.02em}
+  h1 span{background:linear-gradient(90deg,var(--brand),var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent}
+  p.lead{margin:0 0 22px; color:var(--muted); font-size:16.5px; line-height:1.6}
+  ul{list-style:none; padding:0; margin:0 0 26px; display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px}
+  li{
+    background:#0e1620; border:1px solid var(--line); border-radius:12px; padding:12px 14px;
+    font-size:14.5px; color:#cfe0f0;
+  }
+  li b{display:block; color:#fff; font-size:14.5px; margin-bottom:2px}
+  .note{background:#101b24; border:1px solid var(--line); border-left:3px solid var(--brand); border-radius:10px; padding:14px 16px; color:var(--muted); font-size:14.5px; line-height:1.55}
+  .contact{margin-top:22px; display:flex; flex-wrap:wrap; gap:10px}
+  a.btn{
+    text-decoration:none; font-size:14.5px; font-weight:600; padding:11px 16px; border-radius:10px;
+    color:#04121a; background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  }
+  a.ghost{background:transparent; color:#cfe0f0; border:1px solid var(--line)}
+  footer{margin-top:26px; padding-top:16px; border-top:1px solid var(--line); color:#7f90a3; font-size:12.5px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+</style>
+</head>
+<body>
+  <main class="card">
+    <span class="badge"><span class="dot"></span> Stranica je u obnovi</span>
+    <h1>Clean <span>Eksterijeri</span></h1>
+    <p class="lead">Profesionalno vanjsko čišćenje — fasade, tlakovci, terase, staze, ograde i prilazi.
+      Radimo strojno i ručno, s vlastitom opremom i vodom pod pritiskom.</p>
+
+    <ul>
+      <li><b>Fasade i zidovi</b> pranje, uklanjanje algi i plijesni</li>
+      <li><b>Tlakovci i beton</b> strojno čišćenje, uklanjanje mrlja</li>
+      <li><b>Terase i ograde</b> drvo, metal, PVC, kamen</li>
+      <li><b>Prilazi i dvorišta</b> održavanje i dubinsko čišćenje</li>
+    </ul>
+
+    <div class="note">
+      Web stranica je trenutno <b>u obnovi</b> i uskoro se vraća u punom sadržaju.
+      Za ponudu i dogovor javi se na <a href="mailto:[EMAIL]" style="color:var(--brand)">[EMAIL]</a>
+      ili na <span style="color:#fff">[PHONE]</span>.
+    </div>
+
+    <div class="contact">
+      <a class="btn" href="mailto:[EMAIL]?subject=Upit%20-%20Clean%20Eksterijeri">Zatraži ponudu</a>
+      <a class="btn ghost" href="tel:[PHONE]">Nazovi</a>
+    </div>
+
+    <footer>
+      <span>© <span id="y">2026</span> Clean Eksterijeri · cleaneksterijeri.com</span>
+      <span>Sva prava pridržana</span>
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
